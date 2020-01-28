@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me</title>
+	<link rel="stylesheet" href="./Base.css">
+	<style>
+	</style>
+	<script src="./navigation.js"></script>
+</head>
+<body>
+	<nav>
+	<table class="navTable">
+	<tr>
+		<th class="navCell" id="home">
+			<a href="./index.html"></a>
+			<p class="navLink">Home</a>
+		</th>
+		<th class="navCell" id="activePage">
+			<a href="./AboutMe.html"></a>
+			<p class="navLink" id="activeLink">About Me</a>
+		</th>
+		<th class="navCell" id="professionalImage">
+			<a href="./ProfessionalImage.html"></a>
+			<p class="navLink">Professional Image</a>
+		</th>
+		<th class="navCell" id="portfolio">
+			<a href="./Portfolio.html"></a>
+			<p class="navLink">Portfolio</a>
+		</th>
+		<th class="navCell" id="lastCell">
+			<a href="./ServicePage.html"></a>
+			<p class="navLink">Service</a>
+		</th>
+	</tr>
+	</table>
+	</nav>
+	
+	<h1 class="pageTitle"><u>About Me</u></h1>
+	
+	<a href="https://www.facebook.com/cameron.bourque.33" class="externalLink">Facebook</a>
+	<a href="https://www.instagram.com/cameron.bourque/" class="externalLink">Instagram</a>
+	<a href="https://twitter.com/thereallion1159" class="externalLink">Twitter</a>
+	
+	<p class="leftAlign">
+		Howdy! I'm Cameron. I was born in Dallas, Texas. I went to school in Plano, Texas and graduated from Plano Senior High
+		School in 2017. I currently am an undergraduate student at Texas A&M University. I am majoring in Computer Science and
+		minoring in Cyber Security. <br><br>
+		
+		I have played soccer since I was 4 years old. I started playing the guitar when I was 8. I learned French through
+		all 4 years of high school. I also enjoy doing photography. Here is one of my favorite photos I took back in 2016:
+	</p>
+	<img src="./SunsetPhoto.jpg" width="720" height="480"/>
+	
+	<script>
+		addNavListener("home");
+		addNavListener("activePage");
+		addNavListener("professionalImage");
+		addNavListener("portfolio");
+		addNavListener("lastCell");
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+body {
+	background-color: #00367F;
+	color: white;
+	text-align: center;
+	font-family: Franklin Gothic, Arial, Helvetica;
+}
+.navTable {
+	width: 100%;
+	text-align: center;
+	border: 5px solid black;
+}
+.navLink {
+	color: white;
+}
+.navCell {
+	width: 20%;
+	border-right: 1px solid black;
+}
+
+.leftAlign {
+	padding-left: 25%;
+	padding-right: 25%;
+	text-align: left;
+}
+
+.sectionDiv {
+	padding-left: 25%;
+	border-bottom: 1px solid white;
+}
+
+.externalLink {
+	color: white;
+}
+
+#activePage {
+	background-color: white;
+}
+#activeLink {
+	color: black;
+}
+#lastCell {
+	border-right: none;
+}
