@@ -9,13 +9,13 @@ var width;
 var height;
 var ctx;
 
-function setupFractal(w, h){
+function setupFractal(){
 	var canvas = document.getElementById('fractal');
 	if(canvas.getContext){
 		ctx = canvas.getContext('2d');
 		
-		width = w;
-		height = h;
+		width = canvas.getBoundingClientRect().width;
+		height = canvas.getBoundingClientRect().height;
 		
 		paint();
 	}

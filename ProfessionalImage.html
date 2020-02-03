@@ -6,42 +6,26 @@
 	<style>
 	</style>
 	<script src="./navigation.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<nav>
-	<table class="navTable">
-	<tr>
-		<th class="navCell" id="home">
-			<a href="./index.html"></a>
-			<p class="navLink">Home</p>
-		</th>
-		<th class="navCell" id="aboutMe">
-			<a href="./AboutMe.html"></a>
-			<p class="navLink">About Me</p>
-		</th>
-		<th class="navCell" id="activePage">
-			<a href="./ProfessionalImage.html"></a>
-			<p class="navLink" id="activeLink">Professional Image</p>
-		</th>
-		<th class="navCell" id="portfolio">
-			<a href="./Portfolio.html"></a>
-			<p class="navLink">Portfolio</p>
-		</th>
-		<th class="navCell" id="lastCell">
-			<a href="./ServicePage.html"></a>
-			<p class="navLink">Service</p>
-		</th>
-	</tr>
-	</table>
-	</nav>
-	
-	<h1 class="pageTitle"><u>Professional Image</u></h1>
+
+	<div class="topnav">
+		<a href="./index.html">Home</a>
+		<a href="./AboutMe.html">About Me</a>
+		<a class="active" href="./ProfessionalImage.html">Professional Info</a>
+		<a href="./Portfolio.html">Portfolio</a>
+		<a href="./ServicePage.html">Service</a>
+</div>
+
+	<h1 class="pageTitle">Professional Image</h1>
+	<hr class="prof">
 	<section>
 		<a href="https://www.linkedin.com/in/cameronjbourque" class="externalLink">LinkedIn</a>
 		<a href="https://tamu-csm.symplicity.com/profiles/cameron.bourque" class="externalLink">HireAggies</a>
-		<hr>
 	</section>
-	<section>
+	<div class="container">
+
 		<h3>Work Experience:</h3>
 		<p class="leftAlign">
 			<i>Co-op Software Developer on the Controller Products Team at L3Harris Technologies:</i><br><br>
@@ -51,23 +35,21 @@
 			a library for other applications to use to communicate with hardware. Multiple different applications
 			could then include the library for use. I also worked on some applications used for software testing.
 			One applications would be able to listen and send data over a socket. Another test application I worked
-			on was set up to read a specific file type that had a bunch of commands and process them in order to 
+			on was set up to read a specific file type that had a bunch of commands and process them in order to
 			do specific tasks for our testing needs. Most projects needed an application to run multiple jobs in
 			tandem and would require thread-safe queues to move data around. <br><br>
 			&emsp; Coding Languages/Data Formats/Tools Used: &emsp; C/C++, C#, Python, Java, XML, Bash, JSON, CMake, Docker, Git <br>
 		</p>
-		<section class="sectionDiv"></section>
-	</section>
-	<section>
-		<h3>Education:</h3>
+
+		<h3><br>Education:</h3>
 		<p class="leftAlign">
 			<i>Plano Senior High School:</i><br><br>
 			&emsp; Graduation Date: &emsp; June 2017<br>
 			&emsp; GPA: &emsp; 4.02 on the 5.0 scale<br><br>
 			&emsp; Computer Science Material Learned: &emsp; Java, XML, Stacks, Queues, Priority Queues, Sets,
 			Maps/Dictionaries, Linked Lists, Doubly Linked Lists, Heaps, Big(O), Binary/Linear Searches, Bubble Sort, Selection
-			Sort, Insertion	Sort, Merge	Sort, Quick Sort, Heap Sort, Radix Sort, Recursion, Iteration, Boolean Logic, 
-			Inheritance, Polymorphism, File I/O, GUI, Multithreading, In-Fix/Pre-Fix/Post-Fix Notation, Binary Search 
+			Sort, Insertion	Sort, Merge	Sort, Quick Sort, Heap Sort, Radix Sort, Recursion, Iteration, Boolean Logic,
+			Inheritance, Polymorphism, File I/O, GUI, Multithreading, In-Fix/Pre-Fix/Post-Fix Notation, Binary Search
 			Trees, Expression Trees, RegEx <br><br>
 			&emsp; Clubs: &emsp; Computer Science Club, French Club
 		</p>
@@ -86,13 +68,12 @@
 			&emsp; Classes in Progress: &emsp; CSCE 310 (Database Systems), CSCE 313 (Intro to Computer Systems), CSCE 315
 			(Programming Studio), POLS 207 (State and Local Government), STAT 211 (Principles of Statistics I)
 		</p>
-		<section class="sectionDiv"></section>
-		</section>
-	</section>
-	<section>
+	</div>
+
+
 	<h3>Resume:</h3>
 	<embed style="width: 55%; height: 1160px;" src="./CameronBourqueResume.pdf"></embed>
-	</section>
+
 	<script>
 		addNavListener("home");
 		addNavListener("aboutMe");

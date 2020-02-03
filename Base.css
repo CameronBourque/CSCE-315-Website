@@ -1,25 +1,73 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 body {
-	background-color: #00367F;
+	background-color: #2E4057;
 	color: white;
 	text-align: center;
 	font-family: Franklin Gothic, Arial, Helvetica;
 }
-.navTable {
-	width: 100%;
-	text-align: center;
-	border: 5px solid black;
+
+h1 {
+	margin-top: 30px;
+	font-family: Franklin Gothic, Arial, Helvetica;
+	font-size: 80px;
 }
-.navLink {
-	color: white;
+h3 {
+	font-family: Franklin Gothic, Arial, Helvetica;
+	font-size: 30px;
 }
-.navCell {
-	width: 20%;
-	border-right: 1px solid black;
+h4 {
+	font-family: Franklin Gothic, Arial, Helvetica;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+hr {
+	height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+	background-color: #7BB2D9;
+	border: 0px;
+}
+hr.home {
+	width: 80%;
+}
+hr.about {
+	width: 50%
+}
+hr.prof {
+	width: 90%
+}
+hr.port {
+	width: 40%
+}
+hr.service {
+	width: 35%
 }
 
 .leftAlign {
-	padding-left: 25%;
-	padding-right: 25%;
+	padding-left: 10%;
+	padding-right: 10%;
 	text-align: left;
 }
 
@@ -32,7 +80,105 @@ body {
 	color: white;
 }
 
-#activePage {
+.container {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #798086;
+	width: 80%;
+}
+
+.aboutContainer {
+	margin-bottom: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #7BB2D9;
+	width: 80%;
+}
+
+.portContainer {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #7BB2D9;
+	width: 80%;
+}
+
+.spacer {
+	height: 20px;
+}
+
+.image {
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: #7BB2D9;
+	width: 70%;
+	height: auto;
+}
+
+.catanimage {
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: #7BB2D9;
+	width: 50%;
+	height: auto;
+}
+
+
+/*---------------navigation bar---------------*/
+/* background of nav bar */
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+	margin: 0px;
+}
+
+.topnav a {
+  float: left;
+  color: #798086;
+  text-align: center;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #798086;
+  color: white;
+	border-bottom: 4px solid #798086;
+}
+
+.topnav a.active {
+  background-color: white;
+  border-bottom: 4px solid #7BB2D9;
+  color: #798086;
+}
+
+.res {
+  padding: 10px;
+  font-size: 20px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 15px;
+  background: #cecccc;
+  color: white;
+}
+.res:hover {
+  opacity: 0.7;
+}
+
+/* #activePage {
 	background-color: white;
 }
 #activeLink {
@@ -40,4 +186,45 @@ body {
 }
 #lastCell {
 	border-right: none;
+} */
+
+.socialIcons {
+  text-align:center;
+  color: white;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*-------social media buttons--------------*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 15px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #798086;
+  color: white;
+}
+
+.fa-twitter {
+  background: #798086;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #798086;
+  color: white;
+}
+
+.fa-instagram {
+  background: #798086;
+  color: white;
 }

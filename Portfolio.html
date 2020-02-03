@@ -3,127 +3,109 @@
 <head>
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="./Base.css">
-	<style>
-		#fractal {
-			
-		}
+	<style><!--Add links back to top-->
 	</style>
 	<script src="./navigation.js"></script>
 	<script src="./fractal.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body onload="setupFractal(667, 667)">
-	<nav>
-	<table class="navTable">
-	<tr>
-		<th class="navCell" id="home">
-			<a href="./index.html"></a>
-			<p class="navLink">Home</p>
-		</th>
-		<th class="navCell" id="aboutMe">
-			<a href="./AboutMe.html"></a>
-			<p class="navLink">About Me</p>
-		</th>
-		<th class="navCell" id="professionalImage">
-			<a href="./ProfessionalImage.html"></a>
-			<p class="navLink">Professional Image</p>
-		</th>
-		<th class="navCell" id="activePage">
-			<a href="./Portfolio.html"></a>
-			<p class="navLink" id="activeLink">Portfolio</p>
-		</th>
-		<th class="navCell" id="lastCell">
-			<a href="./ServicePage.html"></a>
-			<p class="navLink">Service</p>
-		</th>
-	</tr>
-	</table>
-	</nav>
-	
-	<h1 class="pageTitle"><u>Portfolio</u></h1>
-	<a href="https://github.com/FrozenLion" class="externalLink">GitHub</a>	
-	<hr>
-	
-	<h3>Projects worked on in High School</h3>
-	
-	<h4 class="leftAlign"><u>Fractals Applet</u></h4>
-	<canvas id="fractal" width="667" height="667" style="background-color: white;"></canvas>
-	<p class="leftAlign">
-		Above is a fractal design I made in Java back in highschool as an applet. I have translated it to JavaScript to demonstrate here.
-	</p>	
-	<hr>
-	
-	<h4 class="leftAlign"><u>Screen Saver</u></h4>
-	<img src="./ScreenSaver.png"/>
-	<p class="leftAlign">
-		Above was a project designed that used queues to keep up with drawn circles. Whenever too many circles were drawn it would erase
-		the oldest one and draw a new one in front. Whenever it collided with the edges of the screen it changed colors, direction and
-		speed.
-	</p>
-	<hr>
-	
-	<h4 class="leftAlign"><u>Guitar GUI</u></h4>
-	<img src="./GuitarGUI.png"/>
-	<p class="leftAlign">
-		Above is an image of a GUI Project I made. I created an interface where you
-		can click on any string and fret on the guitar and create notes or chords which could then be strummed. Another feature
-		was added to allow it to save a sequence of notes or chords and play them at a specified tempo.
-	</p>
-	<hr>
-	
-	<h4 class="leftAlign"><u>Multithreaded Animation</u></h4>
-	<img src="./Animation.png"/>
-	<p class="leftAlign">
-		Above is an animation that was created with a bunch of stars that were statically drawn in random sizes and positions around the screen.
-		The UFOs, spaceship and asteroids were all given a random speed and run on different threads. The UFOs and spaceship moved to
-		the right while the asteroids moved left.
-	</p>
-	<hr>
-	
-	<h3>Projects worked on in College</h3>
-	<h4 class="leftAlign"><u>Lego Marble Sorting Project</u></h4>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/SVMyGQ8wqc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<p class="leftAlign">
-		This is a video of our final presentation for our team's marble sorter project freshman year. This was developed in MatLab originally and then translated to LabView. The
-		coding is what I contributed to the most. The design was built out of different materials which had to fit in a $60 budget. The device runs by first sorting all the 
-		marbles into slots. The sorting seperated by material, color and size. After, it scans barcodes and dispenses the correct amount of marbles of each type. In this
-		demonstration it reads 3 different barcodes. When there weren't enough marbles then an alarm would sound. We managed to make it to the contest for the Galveston campus
-		where we placed 2nd and were able to attend the demonstration at College Station.
-	</p>
-	<hr>
-	
-	<h3>Personal Projects</h3>
-	
-	<h4 class="leftAlign"><u>Catan Board Game</u></h4>
-	<p class="leftAlign">
-		Below is a number of pictures illustrating different parts of the game which is a recreation of the board game of the same name.
-	</p>
-	<img src="./CatanMenu.png" width="480"/>	
-	<img src="./CatanPlayers.png" width="480"/>
-	<p>
-		These pictures show the main menu and player select screens. All the buttons were custom made.
-	</p>
-	<img src="./CatanColorPick.png" width="480"/>
-	<img src="./CatanNameChange.png" width="480"/>
-	<p>
-		Above are the custom made color picker and name changer which allowed changing of those features of a player. 
-	</p>
-	<img src="./CatanUpdatedPlayer.png" width="480"/>
-	<p>
-		This shows the results of confirming the color and name changes to Player 1 and then dropping the player count by 1.
-	</p>
-	<img src="./CatanDieRoll.png" height="480"/>
-	<p>
-		This is the part of the game where everyone rolls a die to see who goes first. It rearranges the players in a sorted manner as each player rolls.
-		It also highlights who's turn it is to roll.
-	</p>
-	<img src="./CatanPiecePlacement.png" width="1280"/>
-	<p>
-		Here is a display of the interface within the game. The world tiles were all randomly given a number and color based on the resource it contains.
-		The dice can be rolled and then options selected for the current turn. The custom pieces shown were placed manually based on the closest valid point
-		to where I clicked on the world. All vertices were highlighted for debugging purposes while generating the world.
-	</p>
-	<hr>
-	
+<body onload="setupFractal()">
+
+	<div class="topnav">
+		<a href="./index.html">Home</a>
+		<a href="./AboutMe.html">About Me</a>
+		<a href="./ProfessionalImage.html">Professional Info</a>
+		<a class="active" href="./Portfolio.html">Portfolio</a>
+		<a href="./ServicePage.html">Service</a>
+	</div>
+
+	<h1 class="pageTitle">Portfolio</h1>
+	<hr class="port">
+	<a href="https://github.com/FrozenLion" class="externalLink">GitHub</a>
+
+	<div class="portContainer" style="justify-content: center;">
+		<h4 class="leftAlign"><u>Fractals Applet</u></h4>
+		<div class="image">
+			<canvas id="fractal" width="700%" height="700%" style="background-color: white;"></canvas>
+		</div>
+		<p class="leftAlign">
+			Above is a fractal design I made in Java back in highschool as an applet. I have translated it to JavaScript to demonstrate here.
+		</p>
+	</div>
+
+	<div class="portContainer">
+		<h4 class="leftAlign"><u>Screen Saver</u></h4>
+		<img src="./ScreenSaver.png" class="image">
+		<p class="leftAlign">
+			Above was a project designed that used queues to keep up with drawn circles. Whenever too many circles were drawn it would erase
+			the oldest one and draw a new one in front. Whenever it collided with the edges of the screen it changed colors, direction and
+			speed.
+		</p>
+	</div>
+	<div class="portContainer">
+		<h4 class="leftAlign"><u>Guitar GUI</u></h4>
+		<img src="./GuitarGUI.png" class="image">
+		<p class="leftAlign">
+			Above is an image of a GUI Project I made. I created an interface where you
+			can click on any string and fret on the guitar and create notes or chords which could then be strummed. Another feature
+			was added to allow it to save a sequence of notes or chords and play them at a specified tempo.
+		</p>
+	</div>
+
+	<div class="portContainer">
+		<h4 class="leftAlign"><u>Multithreaded Animation</u></h4>
+		<img src="./Animation.png" class="image">
+		<p class="leftAlign">
+			Above is an animation that was created with a bunch of stars that were statically drawn in random sizes and positions around the screen.
+			The UFOs, spaceship and asteroids were all given a random speed and run on different threads. The UFOs and spaceship moved to
+			the right while the asteroids moved left.
+		</p>
+	</div>
+
+	<div class="portContainer">
+		<h4 class="leftAlign"><u>Lego Marble Sorting Project</u></h4>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/SVMyGQ8wqc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<p class="leftAlign">
+			This is a video of our final presentation for our team's marble sorter project freshman year. This was developed in MatLab originally and then translated to LabView. The
+			coding is what I contributed to the most. The design was built out of different materials which had to fit in a $60 budget. The device runs by first sorting all the
+			marbles into slots. The sorting seperated by material, color and size. After, it scans barcodes and dispenses the correct amount of marbles of each type. In this
+			demonstration it reads 3 different barcodes. When there weren't enough marbles then an alarm would sound. We managed to make it to the contest for the Galveston campus
+			where we placed 2nd and were able to attend the demonstration at College Station.
+		</p>
+	</div>
+
+	<div class="portContainer">
+		<h4 class="leftAlign"><u>Catan Board Game</u></h4>
+		<p class="leftAlign">
+			Below is a number of pictures illustrating different parts of the game which is a recreation of the board game of the same name.
+		</p>
+		<img src="./CatanMenu.png" width="480" class="catanimage">
+		<img src="./CatanPlayers.png" width="480" class="catanimage">
+		<p class="leftAlign">
+			These pictures show the main menu and player select screens. All the buttons were custom made.
+		</p>
+		<img src="./CatanColorPick.png" width="480" class="catanimage">
+		<img src="./CatanNameChange.png" width="480" class="catanimage">
+		<p class="leftAlign">
+			Above are the custom made color picker and name changer which allowed changing of those features of a player.
+		</p>
+		<img src="./CatanUpdatedPlayer.png" width="480" class="image">
+		<p class="leftAlign">
+			This shows the results of confirming the color and name changes to Player 1 and then dropping the player count by 1.
+		</p>
+		<img src="./CatanDieRoll.png" height="480" class="image">
+		<p class="leftAlign">
+			This is the part of the game where everyone rolls a die to see who goes first. It rearranges the players in a sorted manner as each player rolls.
+			It also highlights who's turn it is to roll.
+		</p>
+		<img src="./CatanPiecePlacement.png" width="1280" class="image">
+		<p class="leftAlign">
+			Here is a display of the interface within the game. The world tiles were all randomly given a number and color based on the resource it contains.
+			The dice can be rolled and then options selected for the current turn. The custom pieces shown were placed manually based on the closest valid point
+			to where I clicked on the world. All vertices were highlighted for debugging purposes while generating the world.
+		</p>
+	</div>
+
 	<script>
 		addNavListener("home");
 		addNavListener("aboutMe");

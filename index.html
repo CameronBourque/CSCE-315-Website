@@ -6,41 +6,29 @@
 	<style>
 	</style>
 	<script src="./navigation.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<nav>
-	<table class="navTable">
-	<tr>
-		<th class="navCell" id="activePage">
-			<a href="./Home.html"></a>
-			<p class="navLink" id="activeLink">Home</p>
-		</th>
-		<th class="navCell" id="aboutMe">
-			<a href="./AboutMe.html"></a>
-			<p class="navLink">About Me</p>
-		</th>
-		<th class="navCell" id="professionalImage">
-			<a href="./ProfessionalImage.html"></a>
-			<p class="navLink">Professional Image</p>
-		</th>
-		<th class="navCell" id="portfolio">
-			<a href="./Portfolio.html"></a>
-			<p class="navLink">Portfolio</p>
-		</th>
-		<th class="navCell" id="lastCell">
-			<a href="./ServicePage.html"></a>
-			<p class="navLink">Service</p>
-		</th>
-	</tr>
-	</table>
-	</nav>
-	
-	<h1 class="pageTitle"><u>Cameron Bourque</u></h1>
+
+
+	<div class="topnav">
+		<a class="active" href="./index.html">Home</a>
+		<a href="./AboutMe.html">About Me</a>
+		<a href="./ProfessionalImage.html">Professional Info</a>
+		<a href="./Portfolio.html">Portfolio</a>
+		<a href="./ServicePage.html">Service</a>
+</div>
+
+	<h1 class="pageTitle">Cameron Bourque</h1>
+	<hr class="home">
 	<a href="https://www.pisd.edu/pshs" class="externalLink">Plano Senior High School Website</a>
+	&emsp;
 	<a href="https://www.tamu.edu/" class="externalLink">Texas A&#38;M University Website</a>
-	<p>Welcome to my page! Click any of the tabs above to navigate around!</p>
-	<img src="./family.jpg" width="45%"/>
-	
+	<div class="spacer"></div>
+	<h3>Welcome to my page!</h3>
+	<div class="spacer"></div>
+	<img src="./me.jpg" width="15%"/>
+
 	<script>
 		addNavListener("activePage");
 		addNavListener("aboutMe");
